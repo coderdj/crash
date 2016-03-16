@@ -1,0 +1,26 @@
+Board Test Program
+Author: D. Coderre
+Date: 3.16.2016
+
+Brief: Use a simple function to cause a crash
+
+Hardware Setup: 
+	 
+	 - Ubuntu 14.04 server
+	 - CAEN A3818 with driver 1.5.2, Firmware 0.5, 2 optical links
+	 - CAEN V2718 hooked to optical link 0
+	 - CAEN V1724 hooked to optical link 1 
+	   - Optionally, second V1724 daisy-chained on optical link 1 as well
+	 - V1724 firmware V1724_XENON_F9180407_FA278904 
+Software:
+	 - CAEN VMElib 2.4.1
+	 - This software
+
+Building:
+	- Install CAEN VME lib
+ 	- make
+	- Probably requires build-essential on ubuntu
+
+
+
+	
