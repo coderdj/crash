@@ -1,12 +1,12 @@
-## Board Test Program
-# Author: D. Coderre
-# Date: 3.16.2016
+### Board Test Program
+##### Author: D. Coderre
+##### Date: 3.16.2016
 
-## Brief 
+#### Brief 
 
 Use a simple function to cause a crash
 
-## Hardware Setup
+#### Hardware Setup
  * Ubuntu 14.04 server
  * CAEN A3818 with driver 1.5.2, Firmware 0.5, 2 optical links
  * CAEN V2718 hooked to optical link 0
@@ -15,19 +15,19 @@ Use a simple function to cause a crash
  * Output 3 of V2718 fanned to TRIN of V1724(s)
  * V1724 firmware V1724_XENON_F9180407_FA278904 
 
-## Software
+#### Software
  * CAEN VMElib 2.4.1
  * This software
  * On Ubuntu probably just build-essential
 
-## Building
+#### Building
  * Install CAEN VME lib
  * Install A3818 kernel module
  * make
 
-## Reproducing the error:
+#### Reproducing the error:
 
-# Step 1: Running with one V1724 (no error)
+##### Step 1: Running with one V1724 (no error)
   
   1. Hook up V2718 to A3818 port 0 via optical link
   2. Hook up one V1724 to A3818 port 1 via optical link
@@ -36,7 +36,7 @@ Use a simple function to cause a crash
   5. Run ./crashit and some data should transfer (gets deleted)
   6. It should be possible to adjust TRIGGER to any value (tested up to 15000) with no issue
 
-# Step 2: Running with two V1724 (error arises)
+##### Step 2: Running with two V1724 (error arises)
 
   1. Hook up V2718 to A3818 port 0 via optical link
   2. Hook up two V1724 in daisy chain to A3818 port 1 via optical link
