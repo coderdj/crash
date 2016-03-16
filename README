@@ -11,6 +11,7 @@ Hardware Setup:
 	 - CAEN V2718 hooked to optical link 0
 	 - CAEN V1724 hooked to optical link 1 
 	   - Optionally, second V1724 daisy-chained on optical link 1 as well
+	 - Output 3 of V2718 fanned to TRIN of V1724(s)
 	 - V1724 firmware V1724_XENON_F9180407_FA278904 
 Software:
 	 - CAEN VMElib 2.4.1

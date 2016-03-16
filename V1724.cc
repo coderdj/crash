@@ -155,7 +155,7 @@ int V1724::InitializeCrateController(int link, int i_pulserHz){
   CVBoardTypes BType = cvV2718;
   int tempHandle=-1, cerror=0;
   if((cerror=CAENVME_Init(BType,link,0,&tempHandle))!=cvSuccess){
-    fLog<<"Error initializing crate controller on link "<<link<<endl;
+    fLog<<"Error initializing crate controller on link "<<link<<": "<<cerror<<endl;
     return -1;
   }
   fCrateController = tempHandle;
